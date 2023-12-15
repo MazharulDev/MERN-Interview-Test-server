@@ -15,6 +15,17 @@ const createPath = catchAsync(async (req: Request, res: Response) => {
   });
 });
 
+const getAllPath = catchAsync(async (req: Request, res: Response) => {
+  const result = await PathService.getAllPath();
+  sendResponse(res, {
+    statusCode: httpStatus.OK,
+    success: true,
+    message: "all path showing successfully",
+    data: result,
+  });
+});
+
 export const PathController = {
   createPath,
+  getAllPath,
 };
