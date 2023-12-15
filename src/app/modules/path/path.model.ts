@@ -6,23 +6,18 @@ export const PathSchema = new Schema({
       {
         clientX: {
           type: Number,
-          required: true,
         },
         clientY: {
           type: Number,
-          required: true,
         },
         newColour: {
           type: String,
-          required: true,
         },
         newLinewidth: {
           type: Number,
-          required: true,
         },
         transparency: {
           type: String,
-          required: true,
         },
       },
     ],
